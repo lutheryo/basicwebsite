@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-image: url('sanpablo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    color: #FFF; /
+}
+
+
+header {
+    background-color: #004aad; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-left, .logo-right {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.welcome-section {
+    display: none;
+}
+
+.welcome-section.active {
+    display: block;
+}
+
+button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #003380; /* Darker blue */
+}
+
+/* Pop-up newsletter form styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Background overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it stays on top */
+}
+
+.popup-content {
+    background-color: white; /* Background color of the pop-up */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+    text-align: center;
+    width: 80%; /* Smaller on smaller screens */
+    max-width: 350px; /* Smaller width for desktop, making it more compact */
+    color: black; /* Set text color to black */
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #004aad; /* Color for the close button */
+}
+
+label, input {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #004aad;
+    color: white; /* Submit button text color */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #003380; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%; 
+        max-width: 320px;
+    }
+}

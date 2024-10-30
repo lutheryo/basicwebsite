@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRGY. BAGONG POOK VI-C</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="bplogo.jpg" alt="Barangay Logo" class="logo-left">
+            <h1>Welcome to Barangay Bagong Pook VI-C</h1>
+            <img src="spclogo.png" alt="Barangay Seal" class="logo-right">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="services-link">Services</a></li>
+                <li><a href="#" id="about-link">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home-section" class="welcome-section active">
+            <h2>Welcome to Our Barangay!</h2>
+            <p>Barangay Bagong Pook VI-C is a community dedicated to providing services and support to its residents.</p>
+            <!-- Subscribe Button -->
+            <button id="newsletter-btn">Subscribe to Newsletter</button>
+        </section>
+
+        
+        <section id="services-section" class="welcome-section">
+            <h2>Our Services</h2>
+            <p>
+                Our comprehensive range of services available in Barangay Bagong Pook VI-C includes essential documents and health support, such as the issuance of Barangay Certificates, the provision of Barangay Clearances,<br>
+                 the processing of Barangay Indigency Certificates, and access to a Free Clinic that offers medical consultations and essential medicines to meet the health needs of our community members.</p>
+        </section>
+
+        <section id="about-section" class="welcome-section">
+            <h2>About Us</h2>
+            <p>Bagong Pook VI-C is one of the Barangays of San Pablo City.</p>
+        </section>
+    </main>
+
+    <!-- Pop-up Newsletter Form -->
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
